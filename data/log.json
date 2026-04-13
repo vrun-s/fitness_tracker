@@ -9,6 +9,16 @@
       ],
       "total_calories": 1850,
       "target_calories": 2200
+    }, 
+    {
+      "date": "2026-04-12",
+      "workout": { "done": false, "duration_min": 55, "type": "pull" },
+      "meals": [
+        { "name": "Meal 1", "calories": 620, "time": "08:30" },
+        { "name": "Meal 2", "calories": 750, "time": "13:00" }
+      ],
+      "total_calories": 1600,
+      "target_calories": 2200
     }
   ]
 }
