@@ -6,7 +6,7 @@ on:
 
 jobs:
     log:
-        if: contains(github.event.issues.labels.*.name, 'workout-log')
+        if: contains(github.event.issue.labels.*.name, 'workout-log')
         runs-on: ubuntu-latest
 
         steps:
