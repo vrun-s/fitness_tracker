@@ -1,0 +1,67 @@
+name: Workout Log
+description: Log your daily fitness activity
+title: "Workout Log - "
+labels: ["workout-log"]
+assignees: []
+
+body:
+  - type: dropdown
+    id: workout_done
+    attributes:
+      label: Workout done?
+      description: Was today's workout DONE?
+      options:
+        - Done
+        - Nope :(
+    validations:
+      required: true
+
+  - type: input
+    id: duration
+    attributes:
+      label: Duration (minutes)
+      description: How long was your workout?
+      placeholder: "60"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: workout_type
+    attributes:
+      label: Workout type
+      description: What type of workout did you do?
+      options:
+        - Push
+        - Pull
+        - Legs
+        - Cardio
+        - Rest
+    validations:
+      required: true
+
+  - type: input
+    id: calories
+    attributes:
+      label: Total calories consumed
+      description: Total calories for the day
+      placeholder: "1800"
+    validations:
+      required: true
+
+  - type: input
+    id: target_calories
+    attributes:
+      label: Target calories
+      description: Your daily calorie goal
+      placeholder: "2200"
+    validations:
+      required: true
+
+  - type: input
+    id: date
+    attributes:
+      label: Date
+      description: Enter the date (YYYY-MM-DD)
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
