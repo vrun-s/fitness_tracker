@@ -29,12 +29,12 @@ jobs:
             - name: Commit and push
               run: |
                 git config user.name "github-actions"
-                git confiig user.email "github-actions@github.com"
+                git config user.email "github-actions@github.com"
                 git add data/log.json README.md
                 git diff --staged --quiet || git commit -m "log: new workout entry"
                 git push
 
             - name: Close Issue
-              run: gh issue close ${{ github.event.issue.body }} --comment "Logged Successfully"
+              run: gh issue close ${{ github.event.issue.number }} --comment "Logged Successfully"
               env:
                 GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
