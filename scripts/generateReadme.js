@@ -22,16 +22,6 @@ for (const entry of data.entries) {
     tableRows += `| ${formattedDate} |      ${workoutStatus}        |     ${entry.workout.duration_min}     | ${entry.workout.type} | ${calories}  |\n`
 }
 
-/*
-const outline = '|     Date    | Workout Status |  Duration  | Type |   Calories   |'
-const drawing = '------------------------------------------------------------------'
-console.log(drawing)
-console.log(outline)
-console.log(drawing)
-console.log(tableRows)
-console.log(drawing)
-*/
-
 const header = `| Date | Workout Status | Duration | Type | Calories |\n|------|----------------|----------|------|----------|\n`
 
 const dashboard = `<!-- DASHBOARD_START -->
