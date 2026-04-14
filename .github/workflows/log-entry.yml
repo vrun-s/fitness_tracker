@@ -1,0 +1,40 @@
+name: Log entry
+
+on:
+    issues:
+        types: [opened]
+
+jobs:
+    log:
+        if: contains(github.event.issues.labels.*.name, 'workout-log')
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v4
+
+            - name: Setup nodejs
+              uses: actions/setup-node@v4
+              with:
+                node-version: '22'
+
+            - name: Parse issue and update log
+              env:
+                ISSUE_BODY: ${{ github.event.issue.body }}
+              run: node scrripts/parseIssue.js
+            
+            - name: Update README
+              run: node scripts/generateReadme.js
+
+            - name: Commit and push
+              run: |
+                git config user.name "github-actions"
+                git confiig user.email "github-actions@github.com"
+                git add data/log.json README.md
+                git diff --staged --quiet || git commit -m "log: new workout entry"
+                git push
+
+            - name: Close Issue
+              run: gh issue close ${{ github.event.issue.body }} --comment "Logged Successfully"
+              env:
+                GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

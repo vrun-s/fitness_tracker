@@ -9,17 +9,17 @@ function extractField(body, fieldName) {
 }
 
 const workout_stat = extractField(issue_body, 'Workout done?')
-const workout_duration = extractField(issue_body, 'Duration \\(minutes)\\')
+const workout_duration = extractField(issue_body, 'Duration \\(minutes\\)')
 const workout_type = extractField(issue_body, 'Workout type')
 const workout_totalcal = extractField(issue_body, 'Total calories consumed')
 const workout_targetcal = extractField(issue_body, 'Target calories')
 const workout_date = extractField(issue_body, 'Date')
 
 const entry = {
-    "date": workout_date,
+    "date": workout_date || new Date().toISOString().split('T')[0],
     "workout": {
         "done": workout_stat === "Done",
-        "duration_min": workout_duration,
+        "duration_min": parseInt(workout_duration),
         "type": workout_type 
     },
     "total_calories": parseInt(workout_totalcal),
