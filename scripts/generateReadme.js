@@ -2,6 +2,10 @@ const fs = require('fs')
 
 const data = JSON.parse(fs.readFileSync('data/log.json', 'utf8'))
 
+data.entries.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
+})
+
 let tableRows = ''
 
 for (const entry of data.entries) {
