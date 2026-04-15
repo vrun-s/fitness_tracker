@@ -83,6 +83,16 @@
       },
       "total_calories": 1600,
       "target_calories": 1700
+    },
+    {
+      "date": "2026-04-16",
+      "workout": {
+        "done": false,
+        "duration_min": 60,
+        "type": "Rest"
+      },
+      "total_calories": 1800,
+      "target_calories": 1800
     }
   ]
 }
