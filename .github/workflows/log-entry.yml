@@ -2,7 +2,7 @@ name: Log entry
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited]
 
 jobs:
   log:

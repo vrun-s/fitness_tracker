@@ -3,7 +3,7 @@ const fs = require('fs')
 const issue_body = process.env.ISSUE_BODY
 
 function extractField(body, fieldName) {
-    const regex = new RegExp(`### ${fieldName}\\n\\n(.+)`)
+    const regex = new RegExp(`### ${fieldName}\\s*\\n+([\\s\\S]*?)(\\n###|$)`)
     const match = body.match(regex)
     return match ? match[1].trim() : null
 }
