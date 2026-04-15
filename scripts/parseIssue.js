@@ -14,11 +14,12 @@ const workout_type = extractField(issue_body, 'Workout type')
 const workout_totalcal = extractField(issue_body, 'Total calories consumed')
 const workout_targetcal = extractField(issue_body, 'Target calories')
 const workout_date = extractField(issue_body, 'Date')
+const isWorkoutDone = workout_stat?.trim().toLowerCase() === "done"
 
 const entry = {
     "date": workout_date || new Date().toISOString().split('T')[0],
     "workout": {
-        "done": workout_stat === "Done",
+        "done": isWorkoutDone,
         "duration_min": parseInt(workout_duration),
         "type": workout_type 
     },

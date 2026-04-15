@@ -27,7 +27,7 @@ jobs:
       - name: Parse issue and update log
         env:
           ISSUE_BODY: ${{ github.event.issue.body }}
-        run: node scripts/parseIssue.js   # ✅ fixed typo
+        run: node scripts/parseIssue.js  
 
       - name: Update README
         run: node scripts/generateReadme.js
