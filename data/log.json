@@ -68,11 +68,11 @@
       "date": "2026-04-15",
       "workout": {
         "done": false,
-        "duration_min": 0,
-        "type": "Push"
+        "duration_min": 1,
+        "type": "Cardio"
       },
-      "total_calories": 1800,
-      "target_calories": 1800
+      "total_calories": 1000,
+      "target_calories": 1500
     }
   ]
 }
