@@ -88,8 +88,8 @@
       "date": "2026-04-16",
       "workout": {
         "done": false,
-        "duration_min": 60,
-        "type": "Rest"
+        "duration_min": 57,
+        "type": "Cardio"
       },
       "total_calories": 1800,
       "target_calories": 1800

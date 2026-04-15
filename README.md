@@ -5,7 +5,7 @@
 <!-- DASHBOARD_START -->
 | Date | Workout Status | Duration | Type | Calories |
 |------|----------------|----------|------|----------|
-| 16 Apr 2026 |      ❌        |     60     | Rest | 1800 / 1800  |
+| 16 Apr 2026 |      ❌        |     57     | Cardio | 1800 / 1800  |
 | 15 Apr 2026 |      ❌        |     1     | Cardio | 1000 / 1500  |
 | 14 Apr 2026 |      ❌        |     58     | Legs | 1600 / 1700  |
 | 13 Apr 2026 |      ✅        |     55     | push | 1850 / 2200  |
