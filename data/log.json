@@ -73,6 +73,16 @@
       },
       "total_calories": 1000,
       "target_calories": 1500
+    },
+    {
+      "date": "2026-04-14",
+      "workout": {
+        "done": false,
+        "duration_min": 58,
+        "type": "Legs"
+      },
+      "total_calories": 1600,
+      "target_calories": 1700
     }
   ]
 }
