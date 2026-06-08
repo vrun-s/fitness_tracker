@@ -103,6 +103,16 @@
       },
       "total_calories": 1200,
       "target_calories": 3455
+    },
+    {
+      "date": "2026-06-08",
+      "workout": {
+        "done": false,
+        "duration_min": 53,
+        "type": "Pull"
+      },
+      "total_calories": 2300,
+      "target_calories": 2200
     }
   ]
 }
