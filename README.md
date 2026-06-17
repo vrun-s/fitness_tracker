@@ -5,6 +5,7 @@
 <!-- DASHBOARD_START -->
 | Date | Workout Status | Duration | Type | Calories |
 |------|----------------|----------|------|----------|
+| 17 Jun 2026 |      ❌        |     75     | Push | 1800 / 2200  |
 | 08 Jun 2026 |      ❌        |     53     | Pull | 2300 / 2200  |
 | 16 Apr 2026 |      ❌        |     57     | Cardio | 1800 / 1800  |
 | 15 Apr 2026 |      ❌        |     1     | Cardio | 1000 / 1500  |
