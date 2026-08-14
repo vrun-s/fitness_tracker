@@ -5,6 +5,7 @@
 <!-- DASHBOARD_START -->
 | Date | Workout Status | Duration | Type | Calories |
 |------|----------------|----------|------|----------|
+| 12 Aug 2026 |      ❌        |     123     | Push | 123 / 123  |
 | 11 Aug 2026 |      ❌        |     45     | Rest | 1900 / 2100  |
 | 13 Jul 2026 |      ❌        |     60     | Push | 1800 / 2200  |
 | 17 Jun 2026 |      ❌        |     75     | Push | 1800 / 2200  |

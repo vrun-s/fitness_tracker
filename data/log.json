@@ -143,6 +143,16 @@
       },
       "total_calories": 1900,
       "target_calories": 2100
+    },
+    {
+      "date": "2026-08-12",
+      "workout": {
+        "done": false,
+        "duration_min": 123,
+        "type": "Push"
+      },
+      "total_calories": 123,
+      "target_calories": 123
     }
   ]
 }
